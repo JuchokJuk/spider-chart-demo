@@ -1,7 +1,7 @@
-<script>
-  import Chart from "./Chart.svelte";
+<script lang="ts">
+  import Chart from "../components/Chart.svelte";
 
-  let levels;
+  let levels: number[];
 
   fill();
 
@@ -29,7 +29,7 @@
     ];
   }
 
-  function randomIntFromInterval(min, max) {
+  function randomIntFromInterval(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 </script>
